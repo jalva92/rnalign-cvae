@@ -1,0 +1,40 @@
+# Default configuration for cVAE training
+
+expressionfile: "data/expression.csv"         # Path to expression data CSV
+purityfile: "."                              # Path to purity data CSV (optional)
+classfile: "."                               # Path to class data CSV (optional)
+outputfolder: "outputs"                      # Output folder for results
+cohort: "default_cohort"                     # Cohort name
+
+cuda: false                                  # Use CUDA if available
+seed: 42                                     # Random seed
+
+z_dim: 32                                    # Latent dimension
+hidden_layers: [128, 128]                    # Hidden layer sizes
+num_epochs: 100                              # Number of training epochs
+annealingfactor: 1.0                         # Annealing factor
+gradregmultiplier: 0.0                       # Gradient regularization multiplier
+corregmultiplier: 0.0                        # Correlation regularization multiplier
+gradregepsilon: 1e-8                         # Gradient regularization epsilon
+
+batchnorm: false                             # Use batch normalization
+scaleys: false                               # Scale ys
+ysmultiplier: 1.0                            # ys multiplier
+
+batch_size: 64                               # Batch size
+sup_num: 1000                                # Number of supervised samples
+val_num: 200                                 # Number of validation samples
+
+learning_rate: 0.001                         # Learning rate
+beta_1: 0.9                                  # Adam beta1
+adamweightdecay: 0.0                         # Adam weight decay
+
+decodersigma: 1.0                            # Decoder sigma
+reparamepsilon: 0.01                         # Latent std epsilon
+dropoutp: 0.0                                # Dropout probability
+divideannealstart: 1.0                       # Divide anneal start
+
+shap: false                                  # Compute SHAP values
+logonly: false                               # Log only, no output files
+ysencoder: false                             # Use ys encoder
+fulloutput: false                            # Write full output files

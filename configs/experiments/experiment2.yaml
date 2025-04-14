@@ -1,0 +1,38 @@
+# Experiment 2: Batch normalization, SHAP enabled, smaller model
+
+expressionfile: "data/exp2_expression.csv"
+purityfile: "."
+classfile: "data/exp2_class.csv"
+outputfolder: "outputs/exp2"
+cohort: "exp2"
+
+z_dim: 16
+hidden_layers: [64, 32]
+num_epochs: 50
+annealingfactor: 0.5
+
+gradregmultiplier: 0.0
+corregmultiplier: 0.0
+gradregepsilon: 1e-8
+
+batchnorm: true
+scaleys: false
+ysmultiplier: 1.0
+
+batch_size: 32
+sup_num: 500
+val_num: 100
+
+learning_rate: 0.005
+beta_1: 0.9
+adamweightdecay: 0.0
+
+decodersigma: 1.0
+reparamepsilon: 0.05
+dropoutp: 0.0
+divideannealstart: 1.0
+
+shap: true
+logonly: false
+ysencoder: false
+fulloutput: false

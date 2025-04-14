@@ -1,0 +1,38 @@
+# Experiment 1: Large latent space, regularization
+
+expressionfile: "data/exp1_expression.csv"
+purityfile: "data/exp1_purity.csv"
+classfile: "data/exp1_class.csv"
+outputfolder: "outputs/exp1"
+cohort: "exp1"
+
+z_dim: 64
+hidden_layers: [256, 256, 128]
+num_epochs: 200
+annealingfactor: 2.0
+
+gradregmultiplier: 0.1
+corregmultiplier: 0.05
+gradregepsilon: 1e-7
+
+batchnorm: true
+scaleys: true
+ysmultiplier: 10.0
+
+batch_size: 128
+sup_num: 2000
+val_num: 400
+
+learning_rate: 0.0005
+beta_1: 0.95
+adamweightdecay: 1e-5
+
+decodersigma: 0.8
+reparamepsilon: 0.02
+dropoutp: 0.2
+divideannealstart: 2.0
+
+shap: false
+logonly: false
+ysencoder: false
+fulloutput: true
