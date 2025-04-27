@@ -1,6 +1,6 @@
 # cVAE for Gene Expression Data
 
-Code for RNAlign as presented at [ICLR 2025 AI4NA Workshop (Poster)]([url](https://drive.google.com/file/d/1cKzs5S_rHPV4bgFTH4m17e-c47Os1XCM/view?usp=sharing)), for training and evaluating conditional Variational Autoencoders (cVAE) on gene expression data, with support for continuous and categorical conditioning, interpretability, and reproducible research.
+Code for RNAlign as presented as a [poster at ICLR 2025 AI4NA Workshop](https://drive.google.com/file/d/1cKzs5S_rHPV4bgFTH4m17e-c47Os1XCM/view?usp=sharing), for training and evaluating conditional Variational Autoencoders (cVAE) on gene expression data, with support for continuous and categorical conditioning, interpretability, and reproducible research.
 
 This repository provides a robust framework for training conditional Variational Autoencoders (cVAE) on gene expression data, with a focus on biological interpretability and flexibility. 
 
